@@ -25,6 +25,7 @@ try:
 
         p.ChangeDutyCycle(val[state])
         time.sleep(3)
+        state = State.STOP if state == State.WATER else State.WATER
 except KeyboardInterrupt:
     p.ChangeDutyCycle(2.5)  # turn towards 0 degree
     p.stop()
