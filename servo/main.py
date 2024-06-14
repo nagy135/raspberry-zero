@@ -14,8 +14,8 @@ class State(Enum):
 state = State.STOP
 
 val = {
-        State.WATER: 7.5,
-        State.STOP: 2.5,
+        State.STOP: 7.5,
+        State.WATER: 2.5,
         }
 try:
     while True:
